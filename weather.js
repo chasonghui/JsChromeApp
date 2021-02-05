@@ -35,7 +35,8 @@ function handleGeoError()
 }
 
 function askForCoords(){
-  navigator.geolocation.getCurrentPosition(handleGeoSucces,handleGeoError);
+  //getCurrentPosition -> watchPosition으로 변경함 
+  navigator.geolocation.watchPosition(handleGeoSucces,handleGeoError);
 }
 
 function loadCoords(){
