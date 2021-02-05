@@ -26,7 +26,7 @@ function handleGeoSucces(position){
     longitude : longitude
   };
   saveCoords(coordsObj);
-  getWeather(latitue,longitude);
+  getWeather(latitude,longitude);
 }
 
 function handleGeoError()
